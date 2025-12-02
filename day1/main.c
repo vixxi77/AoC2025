@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 #define MIN 0
 #define MAX 99
@@ -19,8 +18,7 @@ int main(){
 			if(buffer[i] == 'R' || buffer[i] == 'L'){
 				direction = buffer[i];
 			}else{
-				char c = buffer[i];
-				number = number * 10 + atoi(&c);
+				number = number * 10 + (buffer[i] - '0');
 			}
 		}
 
