@@ -24,7 +24,7 @@ int main(){
 
 		switch(direction){
 		case 'R':
-			for(int i = 1; i != (number + 1); i++){
+			for(int i = 0; i != number; i++){
 				if(code_position == MAX){
 					code_position = -1;
 				}
@@ -32,7 +32,7 @@ int main(){
 			}
 			break;
 		case 'L':
-			for(int i = 1; i != (number + 1); i++){
+			for(int i = 0; i != number; i++){
 				if(code_position == MIN){
 					code_position = 100;
 				}
