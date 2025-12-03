@@ -6,18 +6,14 @@ int main(){
 	file = fopen("input.txt", "r");
 	char buffer[512];
 	int first_number = 0;
-	int first_number_index = 0;
 	int second_number = 0;
-	int second_number_index = 0;
 	int max = 0;
 	int current_number = 0;
 	int sum = 0;
 
 	while(fgets(buffer, sizeof(buffer), file)){
 		first_number = 0;
-		first_number_index = 0;
 		second_number = 0;
-		second_number_index = 0;
 		current_number = 0;
 		max = 0;
 
